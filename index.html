@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Moving Game</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+    <!--Game name-->
+    <header class="header">
+        <h1 class="title">Black Jack</h1>
+    </header>
+
+    <!--Score board-->
+    <p id="results" class="results"></p>
+   
+   <div class="score-board">
+       <h2 class="title score-title">Scores</h2>
+
+       <div class="score-sect">
+       <p class=score-type>Win</p>
+       <span id="win" class="score">0<span>
+    </div>
+
+    <div class="score-sect">
+       <p class=score-type>Draw</p>
+       <span id="draw" class="score">0</span>
+    </div>
+
+    <div class="score-sect">
+       <p class=score-type>Lose</p>
+       <span id="lose" class="score" >0</span>
+    </div>
+   </div>
+ 
+    <!--Game table-->
+    <div class="table">         
+        <!--Dealer's Hand-->
+        <div class="table-area">
+            <h2 class="title dealer-title">Dealer</h2>
+            <div class="table-deck card"></div>   
+            <div id="dealer" class="dealer-cards card-display"></div>
+        </div>
+      
+        <!--Player's Hand-->
+        <div class="table-area">
+            <h2 class="title player-title">Player</h2>
+            <div id="player" class="player-cards card-display"></div>
+        </div>
+    </div>
+
+    <!--Game buttons/contols-->
+    <div class="controls">
+        <button id="deal" class="btn">Deal</button>
+        <button id="hitMe" class="btn">Hit Me</button>
+        <button id="hold" class="btn">Hold</button>      
+        <button id="newGame" class="btn">New Game</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+</div>      
+    </body>
+    <script src = "main.js"></script>
+</html> 

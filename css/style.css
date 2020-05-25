@@ -1,0 +1,227 @@
+/*General*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+    margin: 0;
+    font-family: Arial;   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 4.4rem 1fr 1fr 5rem;
+    grid-row-gap: 1.25rem;
+
+    height: 100vh;
+}
+
+/*Utilities: reusable css*/
+.title {
+    margin: 1rem 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+.table-area {
+    display: grid;
+    grid-template-columns: 12rem auto;
+    grid-template-rows: 4rem auto;
+    
+   height: 50%;
+}
+
+/*Cards: general css*/
+.card-display {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.card {
+    height: 9rem;
+    width: 7rem;
+
+    border-radius: 5px;    
+}
+
+.card-dealt {
+    margin: 0 1rem 0 0;
+    padding: 1rem;
+
+    background-color:whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.card-suit {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -0.75rem;
+    
+    text-align: center;
+}
+
+.card-suit-big {
+    font-size: 4rem;
+}
+
+/*Buttons*/
+.btn {
+     padding: 0.5rem;
+     margin: 0 0.5rem;
+     width: 7rem;
+
+     background-color: whitesmoke;
+     border: none;
+     border-radius: 5px;
+     outline: none;
+     font-size: 1rem;
+     font-weight: 400;
+}
+
+/*Specific CSS: From top to bottom*/
+/*Header*/
+.header {
+    grid-column: 1/16;
+    grid-row: 1/2;
+}
+
+/*Score board*/
+.results{
+    grid-column:2/4;
+    grid-row: 2/3;
+    align-self: center;
+
+    height: 5rem;
+    padding: 1.3rem 1rem;
+    
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.score-board {
+    grid-column:2/4;
+    grid-row: 3/4;
+
+    height: 14rem;
+}
+
+.score-title {
+    border-bottom: 2px solid whitesmoke;
+}
+
+.score-sect {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.score-type {
+    display: inline-block;
+    margin: 0;
+    width: 3rem;  
+}
+
+.score {
+    display: inline-block;
+    margin-left: 1rem;
+    width: auto;
+}
+
+/*Game table*/
+.table {
+    grid-column: 5/12;
+    grid-row: 2/4;
+
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.table-deck {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+
+    margin: 1rem;
+
+    background-image: url(/images/background.jpg); /*Photo by Nahil Naseer on Unsplash*/
+    background-size: cover;    
+}
+
+/*Dealer cards*/
+.dealer-title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.dealer-cards {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.card-hidden {
+    margin: 0 1rem 0 0;
+    color: transparent;
+    background-image: url(/images/background.jpg); /*Photo by Nahil Naseer on Unsplash*/
+    background-size: cover;    
+}
+
+/*Dealer cards*/
+.player-title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.player-cards {
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    overflow-y: auto;
+}
+
+.player-cards::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: green;
+  }
+
+.player-cards::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: whitesmoke;
+}
+
+.card-suit-small {
+    font-size: 1.5rem;
+}
+
+.card-shrink {
+    margin: 0 1rem 1rem 0;
+    height: 6rem;
+    width: 4rem;
+    padding: 0.5rem;
+
+    border-radius: 5px;    
+    background-color:whitesmoke;
+    font-size: 0.75rem;
+    font-weight: 200;
+}
+
+/*Buttons/Controls*/
+.controls {
+    grid-column: 1/16;
+    grid-row: 4/5;
+    justify-self: center;
+    align-self: center;  
+}
+
+
+
+
